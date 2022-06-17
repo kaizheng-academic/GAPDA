@@ -24,11 +24,11 @@ F = X.shape[1]                # Original feature dimension
 n_classes = Y_train.shape[1]  # Number of classes
 F_ = 8                        # Output size of first GraphAttention layer
 n_attn_heads = 8              # Number of attention heads in first GAT layer
-dropout_rate = 0.6            # Dropout rate (between and inside GAT layers)
-l2_reg = 5e-4/2               # Factor for l2 regularization
+dropout_rate = 0.02           # Dropout rate (between and inside GAT layers)
+l2_reg = 5e-4/4               # Factor for l2 regularization
 learning_rate = 5e-2          # Learning rate for Adam
-epochs = 10               # Number of training epochs
-es_patience = 100             # Patience fot early stopping
+epochs = 100                # Number of training epochs
+es_patience = 150
 
 # Preprocessing operations
 X = preprocess_features(X)
