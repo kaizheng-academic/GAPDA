@@ -41,23 +41,23 @@ def sample_mask(idx, l):
     return np.array(mask, dtype=np.bool)
 
 
-def load_data():
+def load_data(n):
     """Load data."""
 
     A = []
-    ReadMyCsv(A, "A.csv")
+    ReadMyCsv(A, "A_RNA.csv")
     A=np.array(A).astype(float)
     adj=sparse.csr_matrix(A)
 
     feature = []
-    ReadMyCsv(feature, "feature.csv")
+    ReadMyCsv(feature, "feature"+str(n)+".csv")
     feature = np.array(feature).astype(float)
     features=sparse.csr_matrix(np.array(feature)).tolil()
 
     train0_label = []
-    ReadMyCsv(train0_label, "train0_label.csv")
+    ReadMyCsv(train0_label, "train"+str(n)+"_label.csv")
     test0_label = []
-    ReadMyCsv(test0_label, "test0_label.csv")
+    ReadMyCsv(test0_label, "test"+str(n)+"_label.csv")
     val_label = []
     ReadMyCsv(val_label, "val_label.csv")
     train_mask=[]
