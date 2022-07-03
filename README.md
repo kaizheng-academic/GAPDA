@@ -9,23 +9,19 @@ conda install keras=2.2.0 tensorflow=1.10.0
 
 pip install networkx
 
-GAPDA can be downloaded by
-```
-git clone https://github.com/kaizheng-academic/GAPDA
-```
 Installation has been tested in a Windows platform.
 
 # Dataset Description
-* A: the line graph;
-* feature: the node features;
+* A_RNA: the line graph;
+* Feature: the node features;
 
 
 # Functions Description
-* ```gat.py```: this function can implement the GAPDA algorithm;
+* ```GAPDA.py```: this function can implement the GAPDA algorithm;
 
 # Train and test folds
 
-python gat.py 
+python GAPDA.py 
 
 All files of Data and Code should be stored in the same folder to run the model.
 
