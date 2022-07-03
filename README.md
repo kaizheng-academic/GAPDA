@@ -5,7 +5,8 @@ PIWI proteins and Piwi-Interacting RNAs (piRNAs) are commonly detected in human 
 * python = 3.6
 
 # Installation
-pip install -r requirements.txt
+conda install keras=2.2.0 tensorflow=1.10.0
+pip install networkx
 
 GAPDA can be downloaded by
 ```
@@ -23,7 +24,7 @@ Installation has been tested in a Windows platform.
 
 # Train and test folds
 
-python train.py 
+python gat.py 
 
 All files of Data and Code should be stored in the same folder to run the model.
 
