@@ -21,7 +21,11 @@ Installation has been tested in a Windows platform.
 # Functions Description
 * ```gat.py```: this function can implement the GAPDA algorithm;
 
+# Train and test folds
 
+python train.py 
+
+All files of Data and Code should be stored in the same folder to run the model.
 
 
 
