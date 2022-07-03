@@ -13,7 +13,7 @@ Installation has been tested in a Windows platform.
 
 # Dataset Description
 * A_RNA: the line graph;
-* Feature: the node features;
+* feature0-4: the node features;
 
 
 # Functions Description
