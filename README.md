@@ -21,6 +21,12 @@ Installation has been tested in a Windows platform.
 
 # Train and test folds
 
+1.Constructing the line graph
+
+python line_graph.py
+
+2. Five-fold cross-validation
+
 python GAPDA.py 
 
 All files of Data and Code should be stored in the same folder to run the model.
