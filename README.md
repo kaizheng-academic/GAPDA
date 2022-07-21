@@ -32,6 +32,9 @@ python GAPDA.py
 All files of Data and Code should be stored in the same folder to run the model.
 
 
+# easy-to-use model
+
+The default here is to predict the score on the independent test set. If you want to predict other associations, you can add associations in GAPDA/easy-to-use/data/addList.csv and labels in GAPDA/easy-to-use/data/addLabel.csv. If the added association has no labels, then you need to add the same amount of 0 labels to addLabel.csv.
 
 
 
