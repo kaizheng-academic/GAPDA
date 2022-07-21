@@ -3,7 +3,24 @@ import csv
 
 import numpy as np
 
+def ReadMyCsv(SaveList, fileName):
 
+    csv_reader = csv.reader(open(fileName))
+    for row in csv_reader:  
+        for i in range(len(row)):
+            try:
+                row[i] = float(row[i])
+            except:
+                pass
+
+        SaveList.append(row)
+    return
+
+def StorFile(data, fileName):
+    with open(fileName, "w", newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(data)
+    return
 
 
 
@@ -13,9 +30,7 @@ if __name__ == "__main__":
     FeatureList=[]
 
     ReadMyCsv(FeatureList, "FeatureList.csv")
-    Label=[]
 
-    ReadMyCsv(Label, "Label.csv")
     A=np.zeros((len(FeatureList),len(FeatureList)))
     A2 = np.zeros((len(FeatureList), len(FeatureList)))
     A3 = np.zeros((len(FeatureList), len(FeatureList)))
