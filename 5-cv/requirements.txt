@@ -1,0 +1,2 @@
+conda install keras=2.2.0 tenssorflow=1.10.0
+pip install networkx
