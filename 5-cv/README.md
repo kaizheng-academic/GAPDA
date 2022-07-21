@@ -5,23 +5,31 @@ PIWI proteins and Piwi-Interacting RNAs (piRNAs) are commonly detected in human 
 * python = 3.6
 
 # Installation
-pip install -r requirements.txt
+conda install keras=2.2.0 tensorflow=1.10.0
 
-GAPDA can be downloaded by
-```
-git clone https://github.com/kaizheng-academic/GAPDA
-```
+pip install networkx
+
 Installation has been tested in a Windows platform.
 
 # Dataset Description
-* A: the line graph;
-* feature: the node features;
+* A_RNA: the line graph;
+* feature0-4: the node features;
 
 
 # Functions Description
-* ```gat.py```: this function can implement the GAPDA algorithm;
+* ```GAPDA.py```: this function can implement the GAPDA algorithm;
 
+# Train and test folds
 
+1.Constructing the line graph
+
+python line_graph.py
+
+2. Five-fold cross-validation
+
+python GAPDA.py 
+
+All files of Data and Code should be stored in the same folder to run the model.
 
 
 
