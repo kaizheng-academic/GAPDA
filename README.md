@@ -24,13 +24,13 @@ Installation has been tested in a Windows platform.
 
 
 
-1.Constructing the line graph
+* Constructing the line graph
 
-python line_graph.py
+```python line_graph.py```
 
-2. Five-fold cross-validation
+* Five-fold cross-validation
 
-python GAPDA.py 
+```python GAPDA.py``` 
 
 All files of Data and Code should be stored in the same folder to run the model.
 
@@ -39,8 +39,8 @@ All files of Data and Code should be stored in the same folder to run the model.
 
 The default here is to predict the score on the independent test set. If you want to predict other associations, you can add associations in GAPDA/easy-to-use/data/addList.csv and labels in GAPDA/easy-to-use/data/addLabel.csv. If the added association has no labels, then you need to add the same amount of 0 labels to addLabel.csv.
 
-1. run the easy-to-use model
+* run the easy-to-use model
 
-python easy-to-use.py
+```python easy-to-use.py```
 
 
