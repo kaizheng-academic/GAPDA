@@ -22,6 +22,8 @@ Installation has been tested in a Windows platform.
 
 # Train and test folds
 
+
+
 1.Constructing the line graph
 
 python line_graph.py
