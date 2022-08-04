@@ -5,6 +5,10 @@ PIWI proteins and Piwi-Interacting RNAs (piRNAs) are commonly detected in human 
 * python = 3.6
 
 # Installation
+conda create --name GAPDA
+
+conda activate GAPDA
+
 conda install keras=2.2.0 tensorflow=1.10.0
 
 pip install networkx
