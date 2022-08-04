@@ -13,7 +13,8 @@ conda install keras=2.2.0 tensorflow=1.10.0
 
 pip install networkx
 
-Installation has been tested in a Windows platform.
+Installation has been tested in a Windows platform. If you need help installing conda, you can check the following URL to assist the installation:
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html
 
 # Dataset Description
 * A_RNA: the line graph;
